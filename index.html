@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="米游社，mihoyo">
+<meta name="description" content="米游社-崩坏3社区是米哈游miHoYo旗下崩坏3游戏玩家社区,这里集合了玩家互动,官方资讯、福利趣闻和同人作品- 米哈游崩坏3社区">
+<title>崩坏3社区-米游社</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		letter-spacing:1px;
+		background-color:rgba(228,228,228,1);
+	}
+	.head-line{
+		width:100%;
+		height:60px;
+		background-color:rgba(0,195,255,1);
+	}
+	.navbar{
+		width:1000px;
+		margin:auto;
+	}
+	.head-line .navbar h1{
+		float:left;
+		width:90px;
+		height:60px;
+		background-image:url("img/logo.png");
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:contain;
+	}
+	.head-line p{
+		float:left;
+		margin-left:20px;
+		font-size:14px;
+		font-weight:bold;
+		color:#fff;
+		line-height:60px;
+	}
+	ul{
+		list-style-type:none;
+	}
+	.head-line .navbar>ul{
+		float:left;
+		margin-left:80px;
+	}
+	.head-line .navbar>ul>li{
+		float:left;
+		width:70px;
+		font-size:14px;
+		text-align:center;
+		line-height:60px;
+		color:#FFF;
+		cursor:pointer;
+		transition:.5s;
+	}
+	.head-line .navbar>ul>li:hover{
+		background-color:rgba(46,206,255,1);
+		font-size:16px;
+		font-weight:800;
+	}
+	.head-line .navbar .navbar_list{
+		overflow:hidden;
+		max-height:0;
+		transition:.5s;
+	}
+	.head-line .navbar>ul>li:hover .navbar_list{
+		max-height:500px;
+	}
+	.head-line .navbar .navbar_list li{
+		width:70px;
+		background-color:rgba(255,255,255,1);
+		font-size:14px;
+		text-align:center;
+		line-height:60px;
+		border-top:1px solid rgba(216,216,216,1);
+		color:#000;
+		cursor:pointer;
+	}
+	.clearfix:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+</style>
+</head>
+
+<body>
+	<div class="head-line">
+		<div class="navbar">
+			<h1></h1>
+			<p>米游社·崩坏3</p>
+			<ul class="clearfix">
+				<li><a>首页</a></li>
+				<li><a>甲板</a></li>
+				<li><a>官方</a></li>
+				<li><a>攻略</a></li>
+				<li>
+					<a>更多</a>
+					<ul class="navbar_list">
+						<li>同人</li>
+						<li>问答</li>
+						<li>反馈</li>
+					</ul>
+				</li>
+			</ul>	
+		</div>
+	</div>
+</body>
+</html>
