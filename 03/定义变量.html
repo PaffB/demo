@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            width:100px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+
+    <button id="btn">按钮</button>
+    <script>
+        /*document.getElementById("wrap").onclick = function(){
+            document.getElementById("wrap").innerHTML = "wrap被点击了";
+        };
+        document.getElementById("btn").onclick = function(){
+            document.getElementById("wrap").innerHTML = "按钮被点击了";
+        };*/
+        let oletter = document.getElementById("wrap");//定义变量ES6定义方式
+        let obutton = document.getElementById("btn");
+        oetter.onclick = function(){
+            oletter.innerHTML = "wrap被点击了";
+        };
+        obutton.onclick = function(){
+            oletter.innerHTML = "按钮被点击了";
+        };
+        /*
+        ECMAScript
+        ES5 ES6(2015)let替代var   不兼容IE6 IE7 IE8
+        babel可以将ES6转成ES5    babeljs.cn
+        ES5
+            VAR
+            function
+        ES6
+            let
+            function
+            const常量
+            class定义类
+        定义变量名时统一将定义写在前面
+        不能使用关键词/保留词；尽量不熬使用JS中已经有意义的变量名；组成名字最好是数字，字母，下划线，$
+        驼峰命名法
+        */
+    </script>
+</body>
+</html>

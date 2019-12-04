@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="介绍">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            width:100px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+    </head>
+    <body>
+    <!--
+        可以直接在标签内添加事件，如果没有特殊要求，不在行内添加事件
+    -->
+    <div id="wrap" onclick="alert(234);">wrap</div>
+    <a href="javascript:alert('警告');">a标签不做跳转</a>
+    <a href="javascript:void(0);">a标签不做跳转</a>
+
+    <script><!--无特殊情况写在尾部，只能存在于body和head中-->
+
+    alert("Hellow world!");
+    console.log(123);
+    console.log(234);//调试完需要删除
+    </script>
+
+    <script src="demo.js" type="text/javascript"> <!--type可以不写-->//  \" 转义字符
+    alert("我在这里又一个弹窗")<!--script标签引入外部文件了，在里面写代码无意义-->//单行注释
+    </script>
+    <script src="" language="javascript"></script>
+
+</body>
+</html>

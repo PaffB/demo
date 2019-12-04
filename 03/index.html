@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            width:100px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+    <script>
+        document.getElementById("wrap").onclick = function(){
+            document.getElementById("wrap").innerHTML = "啊飞";
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="介绍">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            width:100px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+    </div>
+
+    <script>
+        let tishen = document.getElementById("wrap");
+        //首先页面加载的时候就给我们需求的节点，绑定一个事件反馈机制
+       /*document.getElementById("wrap") . onclick = function(){
+            alert("你点我干什么？")
+        }//获取在js中的表现形式--元素节点*/
+        document.getElementById("wrap") . innerHTML = "赋值";
+    </script>
+</body>
+</html>

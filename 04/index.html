@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+
+<script>
+    /*
+        当用 . 去取某一个对象的属性的时候，我们基本上都可以使用 []  的方式来代替
+    */
+    let x = {
+        name : "王师傅" ,
+        age : 18 ,
+        0 : 889
+    };
+    //console.log( x.name );
+    console.log(x["age"]);//不用引号，age会被认为是个变量名
+    //console.log(x.0)无法取值
+    console.log(x[0]);
+    console["log"](x["name"]);
+    /*
+        基础数据类型
+            number;string;布尔;underfined;null;symbol
+        引用数据类型
+            object
+        //系统内置对象
+        document
+    */
+    console.dir( document );
+    let y = {
+        name:"阿彬"
+    }
+    y.age =18;
+    y["height"]=150;
+    console.log(y["height"]);
+
+    let a=[0];
+    x.goudan="狗蛋";
+    //[0,goudan:"狗蛋"]
+
+    document.goudan = 456;
+    console.dir(document);
+    console.log(document["goudan"]);
+
+    let b = {
+        name:"阿飞",
+        age:18
+    }
+    console.log(b);
+    let c = Symbol("age");
+    b[ c ] = 99;
+    console.log(b[ c ]);
+</script>
+</body>
+</html>

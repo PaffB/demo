@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            width:100px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap"></div>
+
+<button id="btn">按钮</button>
+<script>
+    let oletter = document.getElementById("wrap");//等号右边为数据类型
+    /*
+    数据类型：
+        number  数字
+        string  字符串
+        boolean     true false  布尔值
+        undefined   未定义型
+        null    空的对象指针      用于后续运算将被赋予某个对象的值的对象
+        symbol  let x = Symbol(456);    ES6新增类型，独一无二的数值
+        eg：let x = Symbol(123);
+            let y = Symbol(123);
+            x == y
+            return:false;
+        []  数组  //数组中也可存取变量名
+        let y = ["苹果","香蕉","菠萝","西瓜"];
+        console.log(y[2]);      y[2]数值类型：该值的类型
+        let x = [10,["阿飞","朱雀"]]
+        console.log(y[1][1])
+
+        y=x     变量名赋值
+
+       //对象
+        let = x {
+            name : "阿飞"，    //name可以加引号，但name位置不能用变量
+            age : 16，
+            married : true
+        };
+        console.log( x.name )
+    */
+    //常量const必须赋值
+    let x = `456`;//ES6中新的定义方式--模板字符串
+    let y = true;
+    let z = undefined;
+    let obutton = document.getElementById("btn");
+    oetter.onclick = function(){
+        oletter.innerHTML = "wrap被点击了";
+    };
+    obutton.onclick = function(){
+        oletter.innerHTML = "按钮被点击了";
+    };
+</script>
+</body>
+</html>
